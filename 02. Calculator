@@ -1,0 +1,22 @@
+package operators;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int a, b, result;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter valid values for a and b: ");
+
+        a = scanner.nextInt();
+        b = scanner.nextInt();
+
+        result = a + b;
+        System.out.println("Result after addition: " + result);
+
+        scanner.close();  // good practice to close the scanner
+    }
+
+}

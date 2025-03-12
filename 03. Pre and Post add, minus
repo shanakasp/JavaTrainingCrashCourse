@@ -1,1 +1,42 @@
 
+package operators;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int a, b;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter value for a: ");
+        a = scanner.nextInt();
+
+        System.out.print("Enter value for b: ");
+        b = scanner.nextInt();
+
+        // Post-Increment Example (adds 'a' first, then increments 'a')
+        int resultPost = a++ + b;
+        System.out.println("Post-Increment result (a++ + b): " + resultPost);
+        System.out.println("Value of a after Post-Increment: " + a);
+
+        // Pre-Increment Example (increments 'a' first, then adds)
+        int resultPre = ++a + b;
+        System.out.println("Pre-Increment result (++a + b): " + resultPre);
+        System.out.println("Value of a after Pre-Increment: " + a);
+
+        // Post-Decrement Example (uses 'a' first, then decrements 'a')
+        int resultPostDec = a-- + b;
+        System.out.println("Post-Decrement result (a-- + b): " + resultPostDec);
+        System.out.println("Value of a after Post-Decrement: " + a);
+
+        // Pre-Decrement Example (decrements 'a' first, then adds)
+        int resultPreDec = --a + b;
+        System.out.println("Pre-Decrement result (--a + b): " + resultPreDec);
+        System.out.println("Value of a after Pre-Decrement: " + a);
+
+        scanner.close();
+    }
+
+}

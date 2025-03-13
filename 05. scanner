@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      System.out.println("Hello, World!");
+      
+      int x = 10;
+      System.out.println("This is the output line X: " + x);
+      
+      System.out.printf("This is value of x = %d , PI = %f \n" , x, 22f/7);
+      
+      Scanner scanner = new Scanner(System.in);
+      System.out.println("Enter data using keyboard");
+      
+      int data = scanner.nextInt();
+      
+      System.out.println("The data has been got: " + data);
+  }
+}

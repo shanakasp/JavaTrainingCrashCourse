@@ -1,0 +1,56 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      System.out.println("Hello, World!");
+      
+     StringBuffer sBuffer = new StringBuffer();
+     System.out.println("Capacity of the stringBuffer: " +  sBuffer.capacity());
+     
+     //Change defualt size of the string buffer
+     sBuffer = new StringBuffer(50);
+     System.out.println("Capacity of the stringBuffer after defined: " +  sBuffer.capacity());
+     
+     
+     //Add charachters
+     sBuffer = new StringBuffer("Shanaka Prince");
+     System.out.println("Text is : " + sBuffer);
+     
+     sBuffer.append(". Hambantota");
+     System.out.println("Text is : " + sBuffer);
+     
+     sBuffer.insert(8, "Thisara");
+     System.out.println("Text is : " + sBuffer);
+      
+     System.out.println("Text is : " + sBuffer.insert(10, " hello "));
+     System.out.println("Text is : " + sBuffer.reverse());
+     
+     StringBuilder sBuider = new StringBuilder();
+     System.out.println("capacity of the string Builder: " + sBuider.capacity());
+     
+     
+     
+     //Change defualt size of the string buffer
+     sBuffer = new StringBuffer(50);
+     System.out.println("Capacity of the stringBuffer after defined: " +  sBuffer.capacity());
+     
+     
+     
+      StringBuilder sBuilder = new StringBuilder();
+     System.out.println("capacity of the string Builder: " + sBuider.capacity());
+     //Add charachters
+     sBuilder = new StringBuilder("Shanaka Prince");
+     System.out.println("Text is : " + sBuilder);
+     
+     sBuilder.append(". Hambantota");
+     System.out.println("Text is : " + sBuilder);
+     
+     sBuilder.insert(8, "Thisara");
+     System.out.println("Text is : " + sBuilder);
+      
+     System.out.println("Text is : " + sBuilder.insert(10, " hello "));
+     System.out.println("Text is : " + sBuilder.reverse());
+     
+  
+  }
+}

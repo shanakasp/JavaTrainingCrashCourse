@@ -1,0 +1,47 @@
+
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      System.out.println("Hello, World!");
+      
+      
+      String str1 = "HELLO" , str2 = "Hello";
+      
+      if (str1.equals(str2))
+      {
+        System.out.println(str1 + " & " + str2 + " are same");
+      }
+      else{
+        System.out.println(str1 + " & " + str2 + " are not same");
+      }
+      
+       if (str1.equalsIgnoreCase(str2))
+      {
+        System.out.println(str1 + " & " + str2 + " are same");
+      }
+      else{
+        System.out.println(str1 + " & " + str2 + " are not same");
+      }
+      
+      
+      str1 = "AABBCABBAA";
+      str2 = "JAVA String Functions";
+      
+      System.out.println("The string " + str1 + " is starts with (AAB) " + str1.startsWith("AAB"));
+       System.out.println("The string " + str1 + " is starts with (AAB) " + str1.endsWith("ACA"));
+ 
+      System.out.println("First index of (BB) in " + str1 + " is: " + str1.indexOf("BB"));
+       System.out.println("Last index of (BB) in " + str1 + " is: " + str1.lastIndexOf("BB"));
+       
+       //Replace
+       System.out.println("Replacing (ABB) to (XY) of " + str1 + " is: " + str1.replace("ABB", "XY"));
+ 
+      //Get part from a given string 
+      System.out.println("Substring of " + str2 + " from 5 to 15: " + str2.substring(5,15));
+      
+      str2 = "      Lot's of blank Spaces    ";
+      System.out.println("After triming: "+  str2.trim());
+  }
+}
